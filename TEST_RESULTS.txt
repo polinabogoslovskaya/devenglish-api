@@ -1,0 +1,15 @@
+DevEnglish API — локальная проверка
+Дата: 2026-10-26
+Команда: python -m pytest -v
+Результат: 14 passed
+
+Дополнительно проверен реальный запуск Uvicorn на 127.0.0.1:8765:
+- GET /health — HTTP 200, status=ok
+- GET /version — HTTP 200
+- GET /categories — HTTP 200
+- GET /phrases?category=code_review&level=intermediate — HTTP 200
+- GET /quiz/question?phrase_id=de-001 — HTTP 200
+- POST /quiz/answer с правильным переводом — HTTP 200, correct=true
+- GET /stats — HTTP 200
+
+GitHub Actions workflow подготовлен, но удалённый запуск CI не подтверждён: репозиторий не опубликован в GitHub.

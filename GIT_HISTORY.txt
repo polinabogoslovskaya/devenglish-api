@@ -1,0 +1,9 @@
+a344438 test: record local test and smoke-check results
+e6f573c ci: run tests and upload artifact on push and pull request
+04106d1 docs: explain topic originality and target audience
+28d646d test: cover category totals and empty quiz filters
+8d0d038 feat: expose category catalogue and phrase counts
+9fe0aa9 feat: add phrase creation and multiple-choice quiz
+ee612b4 feat: add developer phrasebook with search and filters
+fc8765b feat: add health and version endpoints with request logging
+6c89303 chore: add project skeleton and dependencies
